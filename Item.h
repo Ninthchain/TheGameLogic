@@ -2,6 +2,7 @@
 #include <string>
 #include "./Hero.h"
 
+
 class Item
 {
 private:
@@ -23,7 +24,8 @@ private:
 
 public:
 	Item(unsigned int cost, std::string item_name);
-	
+
+
 	bool isPiercesSpellImmunity();
 	bool canBeDropped();
 	bool isDropped();
