@@ -7,7 +7,6 @@ class Inventory
 private:
 	std::vector<Item*>* items;
 	unsigned int *max_size;
-	unsigned int *current_size;
 
 	void initialize();
 
@@ -19,8 +18,8 @@ public:
 
 	void addItem(Item* itemPtr);
 
-	void removeItemById(unsigned int id, bool all);
-	void removeItemByName(std::string name, bool all);
+	void dropItemById(unsigned int id, bool all);
+	void dropItemByIndex(unsigned int index, bool all);
 
 	void setItem(unsigned int id, Item value);
 
